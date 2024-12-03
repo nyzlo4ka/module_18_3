@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Магазин</title>
+    <style>
+        button {
+            padding: 3px 5px;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Магазин</h1>
+    <ul>
+        {% for key, value in games.items %}
+            <li>
+                {{ value }}
+                <button>Купить</button>
+            </li>
+        {% endfor %}
+    </ul>
+    <a href="/home/"><button>На главную</button></a>
+</body>
+</html>
